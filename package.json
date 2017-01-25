@@ -1,14 +1,17 @@
 {
   "name": "bem-learning",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
+  "version": "0.1.0",
   "devDependencies": {
-    "grunt": "^1.0.1"
+    "bourbon": "^4.2.7",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-newer": "^1.2.0",
+    "grunt-sass": "^1.2.1",
+    "grunt-sass-lint": "^0.2.0",
+    "node-bourbon": "^4.2.8"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.1"
   }
 }
