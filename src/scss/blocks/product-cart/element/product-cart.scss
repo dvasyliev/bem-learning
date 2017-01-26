@@ -1,0 +1,149 @@
+.product-cart {
+    &__title {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__attributes {
+        display: table;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    &__attribute {
+        display: table-row;
+
+        &-title,
+        &-text {
+            padding-bottom: 5px;
+        }
+
+        &-title {
+            display: table-cell;
+            width: 65px;
+            color: #999;
+        }
+
+        &-text {
+            display: table-cell;
+            padding-left: 5px;
+            vertical-align: top;
+        }
+    }
+
+    &__image {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 200px;
+        margin: 0 auto 10px;
+    }
+
+    &__materials {
+        display: table;
+        width: 100%;
+    }
+
+    &__material {
+        display: table-row;
+
+        &-description,
+        &-color {
+            display: table-cell;
+            padding-bottom: 15px;
+            vertical-align: top;
+        }
+
+        &-description {
+            padding-right: 15px;
+        }
+
+        &-title {
+            // empty
+        }
+
+        &-status {
+            border-bottom: 1px dotted #999;
+            font-size: .8em;
+            color: #999;
+        }
+
+        &-color {
+            width: 40px;
+            text-align: right;
+        }
+
+        &-image {
+            display: block;
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50px;
+
+            background: red;
+        }
+    }
+
+    &__price {
+        margin-bottom: 15px;
+        font-size: 1.25rem;
+
+        &-old {
+            padding-left: 5px;
+            font-size: .8em;
+            text-decoration: line-through;
+            color: #999;
+        }
+
+        &-new {
+            // empty
+        }
+    }
+
+    &__buy {
+        display: table;
+        width: 100%;
+    }
+
+    &__number,
+    &__basket {
+        display: table-cell;
+    }
+
+    &__number {
+        font-size: 0;
+
+        &-button,
+        &-input {
+            display: inline-block;
+            height: 25px;
+        }
+
+        &-button {
+            width: 30px;
+            background: #fff;
+            border: 1px solid #ccc;
+        }
+
+        &-input {
+            width: 35px;
+            padding: 0 10px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+    }
+
+    &__basket {
+        text-align: right;
+    }
+
+    &__button {
+        display: inline-block;
+        width: 90px;
+        height: 25px;
+        color: #fee;
+        background: #f00;
+    }
+}

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Bem learning</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="../stylesheet/main.css">
 </head>
 <body>
@@ -11,80 +12,67 @@
     <!-- Title -->
     <h3 class="product-cart__title">Стол эргономичный, правый</h3>
 
-    <!-- Article -->
-    <p class="product-cart__article">
-        <span class="product-cart__article-title">Артикул</span> 14578455
-    </p>
+    <!-- Attributes -->
+    <div class="product-cart__attributes">
+        <div class="product-cart__attribute">
+            <span class="product-cart__attribute-title">Артикул</span>
+            <span class="product-cart__attribute-text">14578455</span>
+        </div>
 
-    <!-- Size -->
-    <p class="product-cart__size">
-        <span class="product-cart__size-title">ШхГхВ</span> 1400 х 800 х 750 мм
-    </p>
+        <div class="product-cart__attribute">
+            <span class="product-cart__attribute-title">ШхГхВ</span>
+            <span class="product-cart__attribute-text">1400 х 800 х 750 мм</span>
+        </div>
+    </div>
 
     <!-- Image -->
-    <div class="product-cart__image">
-        <img class="product-cart__image-source" src="table_ergonomic.jpg" alt="Table ergonomic">
-    </div>
+    <img class="product-cart__image" src="../image/table_ergonomic.jpg" alt="Table ergonomic">
 
     <!-- Materials -->
     <div class="product-cart__materials">
         <!-- Material -->
         <div class="product-cart__material">
-            <div class="material">
-                <div class="material__description">
-                    <h4 class="material__title">Орех Французкий</h4>
-                    <span class="material__availability">Под заказ</span>
-                </div>
+            <div class="product-cart__material-description">
+                <h4 class="product-cart__material-title">Орех Французкий</h4>
+                <span class="product-cart__material-status">Под заказ</span>
+            </div>
 
-                <div class="material__image">
-                    <img class="material__image-source" src="walnut_french.jpg" alt="Walnut French">
-                </div>
+            <div class="product-cart__material-color">
+                <img class="product-cart__material-image" src="../image/walnut_french.jpg" alt="Walnut French">
             </div>
         </div>
 
         <!-- Material -->
         <div class="product-cart__material">
-            <div class="material">
-                <div class="material__description">
-                    <h4 class="material__title">Орех Английский</h4>
-                    <span class="material__availability">Есть на складе</span>
-                </div>
+            <div class="product-cart__material-description">
+                <h4 class="product-cart__material-title">Орех Английский</h4>
+                <span class="product-cart__material-status">Есть на складе</span>
+            </div>
 
-                <div class="material__image">
-                    <img class="material__image-source" src="walnut_english.jpg" alt="Walnut English">
-                </div>
+            <div class="product-cart__material-color">
+                <img class="product-cart__material-image" src="../image/walnut_english.jpg" alt="Walnut English">
             </div>
         </div>
     </div>
 
-    <!-- Prise -->
-    <div class="product-cart__prise">
-        <span class="product-cart__price-new">18 990</span>
-        <span class="product-cart__price-old">24 300</span>
+    <!-- Price -->
+    <div class="product-cart__price">
+        <span class="product-cart__price-new">18 990 руб.</span>
+        <span class="product-cart__price-old">24 300 руб.</span>
     </div>
 
     <!-- Buy -->
     <div class="product-cart__buy">
         <!-- Number -->
         <div class="product-cart__number">
-            <div class="number">
-                <div class="number__decrement">
-                    <button class="number__button number__button-decrement" type="button">-</button>
-                </div>
-
-                <div class="number__value">
-                    <input class="number__input-value" type="text">
-                </div>
-
-                <div class="number__increment">
-                    <button class="number__button number__button-increment" type="button">+</button>
-                </div>
-            </div>
+            <button class="product-cart__number-button" type="button">-</button>
+            <input class="product-cart__number-input" type="text" value="1">
+            <button class="product-cart__number-button" type="button">+</button>
         </div>
 
         <!-- Button -->
-        <div class="product-cart__button">
-            <button class="button" type="button">В корзину</button>
+        <div class="product-cart__basket">
+            <button class="product-cart__button" type="button">В корзину</button>
         </div>
     </div>
 </div>
