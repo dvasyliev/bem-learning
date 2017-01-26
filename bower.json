@@ -1,0 +1,20 @@
+{
+  "name": "bem-learning",
+  "description": "",
+  "main": "",
+  "authors": [
+    "dvasyliev <dvasyliev.dev@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/dvasyliev/bem-learning",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1"
+  }
+}
