@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Bem learning</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
-    <link rel="stylesheet" href="../stylesheet/main.css">
+    <link rel="stylesheet" href="/stylesheet/main.css">
 </head>
 <body>
 <!-- Product -->
@@ -30,27 +30,34 @@
 
     <!-- Materials -->
     <div class="product-cart__materials">
-        <!-- Material -->
-        <div class="product-cart__material">
-            <div class="product-cart__material-description">
-                <h4 class="product-cart__material-title">Орех Французкий</h4>
-                <span class="product-cart__material-status">Под заказ</span>
+        <button class="product-cart__choose-material-button">
+            <span class="product-cart__choose-material-name">Орех Французкий</span>
+            <img class="product-cart__choose-material-image" src="../image/walnut_french.jpg" alt="Walnut French">
+        </button>
+
+        <div class="product-cart__materials-list">
+            <!-- Material -->
+            <div class="product-cart__material product-cart__material--active">
+                <div class="product-cart__material-description">
+                    <h4 class="product-cart__material-name">Орех Французкий</h4>
+                    <span class="product-cart__material-status">Под заказ</span>
+                </div>
+
+                <div class="product-cart__material-color">
+                    <img class="product-cart__material-image" src="../image/walnut_french.jpg" alt="Walnut French">
+                </div>
             </div>
 
-            <div class="product-cart__material-color">
-                <img class="product-cart__material-image" src="../image/walnut_french.jpg" alt="Walnut French">
-            </div>
-        </div>
+            <!-- Material -->
+            <div class="product-cart__material">
+                <div class="product-cart__material-description">
+                    <h4 class="product-cart__material-name">Орех Английский</h4>
+                    <span class="product-cart__material-status">Есть на складе</span>
+                </div>
 
-        <!-- Material -->
-        <div class="product-cart__material">
-            <div class="product-cart__material-description">
-                <h4 class="product-cart__material-title">Орех Английский</h4>
-                <span class="product-cart__material-status">Есть на складе</span>
-            </div>
-
-            <div class="product-cart__material-color">
-                <img class="product-cart__material-image" src="../image/walnut_english.jpg" alt="Walnut English">
+                <div class="product-cart__material-color">
+                    <img class="product-cart__material-image" src="../image/walnut_english.jpg" alt="Walnut English">
+                </div>
             </div>
         </div>
     </div>
@@ -72,9 +79,12 @@
 
         <!-- Button -->
         <div class="product-cart__basket">
-            <button class="product-cart__button" type="button">В корзину</button>
+            <button class="product-cart__basket-button" type="button">В корзину</button>
         </div>
     </div>
 </div>
+
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/javascript/main.js"></script>
 </body>
 </html>
